@@ -16,6 +16,7 @@ specifiers:
   react-router-config: ^5.1.1
   react-router-dom: ^5.3.4
   react-scripts: 5.0.1
+  react-transition-group: ^4.4.5
   redux: ^4.2.1
   redux-immutable: ^4.0.0
   redux-thunk: ^2.4.2
@@ -39,6 +40,7 @@ dependencies:
   react-router-config: 5.1.1_rlw3ibuvnpt5jvejeevjcf4ije
   react-router-dom: 5.3.4_react@18.2.0
   react-scripts: 5.0.1_react@18.2.0
+  react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
   redux: 4.2.1
   redux-immutable: 4.0.0_immutable@4.2.4
   redux-thunk: 2.4.2_redux@4.2.1
@@ -4404,6 +4406,13 @@ packages:
       utila: 0.4.0
     dev: false
 
+  /dom-helpers/5.2.1:
+    resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
+    dependencies:
+      '@babel/runtime': 7.20.13
+      csstype: 3.1.1
+    dev: false
+
   /dom-serializer/0.2.2:
     resolution: {integrity: sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g==}
     dependencies:
@@ -8763,6 +8772,20 @@ packages:
       - webpack-cli
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: false
+
+  /react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
+    peerDependencies:
+      react: '>=16.6.0'
+      react-dom: '>=16.6.0'
+    dependencies:
+      '@babel/runtime': 7.20.13
+      dom-helpers: 5.2.1
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react/18.2.0:

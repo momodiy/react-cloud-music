@@ -55,7 +55,6 @@ function Singers(props) {
     // 渲染函数，返回歌手列表
     const renderSingerList = () => {
         const list = singerList ? singerList.toJS() : [];
-        console.log(list, '列表')
         return (
             <List>
                 {
@@ -92,7 +91,8 @@ function Singers(props) {
                 >
                     {renderSingerList()}
                 </Scroll>
-                <Loading show={enterLoading}></Loading>
+                {enterLoading && <Loading/>}
+                {/*<Loading show={enterLoading}></Loading>*/}
             </ListContainer>
         </div>
     )

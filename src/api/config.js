@@ -184,6 +184,10 @@ export const categoryTypes = [{
 // ];
 export const alphaTypes = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(v => ({ key: v, name: v }))
 
+//顶部的高度
+export const HEADER_HEIGHT = 45;
+
 export {
   axiosInstance
 };
+

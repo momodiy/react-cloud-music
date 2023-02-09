@@ -12,7 +12,6 @@ const defaultState = fromJS({
 export default (state = defaultState, action) => {
     switch(action.type) {
       case actionTypes.CHANGE_SINGER_LIST:
-        console.log(action.data, '选择1')
         return state.set('singerList', action.data);
       case actionTypes.CHANGE_PAGE_COUNT:
         return state.set('pageCount', action.data);
