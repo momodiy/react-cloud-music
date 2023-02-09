@@ -14,36 +14,36 @@ import {
   import {
     fromJS
   } from 'immutable';
-  
-  
+
+
   const changeSingerList = (data) => ({
     type: CHANGE_SINGER_LIST,
     data: fromJS(data)
   });
-  
+
   export const changePageCount = (data) => ({
     type: CHANGE_PAGE_COUNT,
     data
   });
-  
+
   //进场loading
   export const changeEnterLoading = (data) => ({
     type: CHANGE_ENTER_LOADING,
     data
   });
-  
+
   //滑动最底部loading
   export const changePullUpLoading = (data) => ({
     type: CHANGE_PULLUP_LOADING,
     data
   });
-  
+
   //顶部下拉刷新loading
   export const changePullDownLoading = (data) => ({
     type: CHANGE_PULLDOWN_LOADING,
     data
   });
-  
+
   //第一次加载热门歌手
   export const getHotSingerList = () => {
     return (dispatch) => {
@@ -57,12 +57,12 @@ import {
       })
     }
   };
-  
+
   //加载更多热门歌手
   export const refreshMoreHotSingerList = () => {
     return (dispatch, getState) => {
       const pageCount = getState().getIn(['singers', 'pageCount']);
-      console.log(pageCount, '数量')
+
       const singerList = getState().getIn(['singers', 'singerList']).toJS();
       getHotSingerListRequest(pageCount).then(res => {
         const data = [...singerList, ...res.artists];
@@ -73,7 +73,7 @@ import {
       });
     }
   };
-  
+
   //第一次加载对应类别的歌手
   export const getSingerList = (category, alpha) => {
     return (dispatch, getState) => {
@@ -87,7 +87,7 @@ import {
       });
     }
   };
-  
+
   //加载更多歌手
   export const refreshMoreSingerList = (category, alpha) => {
     return (dispatch, getState) => {
